@@ -1,5 +1,5 @@
-rasa==3.0.0
-rasa_sdk==3.0.0
+rasa==3.6.21
+rasa_sdk==3.6.2
 requests
 aiohttp
 PyYAML==6.0.2
