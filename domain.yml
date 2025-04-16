@@ -1,0 +1,70 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - default
+  - explain
+  - calculate_mod_base
+  - calculate_mod_remainder
+  - calculate_mod_neg
+  - calculate_mod_equality
+  - calculate_mod_story
+
+responses:
+  utter_greet:
+    - text: |
+        Hi there! 👋 I'm your helpful chatbot here to assist you with modular arithmetic and related questions. You can ask me things like:
+        - What is 10 mod 3?
+        - What is the remainder when 15 is divided by 4?
+        - Can you explain how mod works?
+        - Can you calculate 5 mod -3?
+        - What's the remainder when dividing 9 by 4?
+        - A farmer collected 120 eggs and placed them into cartons that each hold 12 eggs. After filling as many cartons as possible, how many eggs will be left?
+
+  utter_default:
+    - text: |
+        This chatbot only handles cases of:
+        - What is 10 mod 3?
+        - What is the remainder when 15 is divided by 4?
+        - Can you explain how mod works?
+        - Can you calculate 5 mod -3?
+        - What's the remainder when dividing 9 by 4?
+        - A farmer collected 120 eggs and placed them into cartons that each hold 12 eggs. After filling as many cartons as possible, how many eggs will be left?
+
+  utter_goodbye:
+    - text: "Bye"
+    - text: "see you later."
+
+  utter_explain:
+    - text: |
+        The modulo operation, denoted by the symbol mod, finds the remainder when one number is divided by another. In simpler terms, it tells you what is left over after dividing two numbers.
+        For example, in the expression:
+        17 mod 5
+        1. Divide 17 by 5:  
+           17 div 5 = 3 (quotient) with a remainder of 2.  
+           This means that 17 = 5 times 3 + 2.
+        2. The remainder (2) is the result of 17 mod 5.  
+           So, 17 mod 5 = 2.
+        General Formula:
+        Given two numbers, a and b, the result of a mod b is the remainder when a is divided by b.
+        - a = dividend
+        - b = divisor
+        The result is the remainder after performing the division:  
+        a = b times quotient + remainder
+         Example 1:
+        - 13 mod 4:  
+           13 div 4 = 3 (quotient), remainder is 1.  
+           So, 13 mod 4 = 1.
+         Example 2:
+        - 20 mod 6:  
+           20 div 6 = 3 (quotient), remainder is 2.  
+           So, 20 mod 6 = 2.
+        In short, the modulo operation returns what's left over when dividing.
+
+actions:
+  - action_calc_mod
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

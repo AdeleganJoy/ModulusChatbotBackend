@@ -1,0 +1,77 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: calculate_mod_base
+  examples: |
+    - What is 10 mod 3?
+    - Calculate 17 mod 5
+    - Find 20 modulo 6
+    - What's the remainder when 15 is divided by 4?
+    - 7 mod 2
+    - mod of 19 and 6
+    - How much is 23 mod 4?
+
+- intent: calculate_mod_remainder
+  examples: |
+    - What is the remainder of 23 divided by 5?
+    - Find the remainder when 18 is divided by 7
+    - Remainder of 35 divided by 6
+    - How much is left over when 20 is divided by 4?
+    - 42 divided by 8, what's the remainder?
+    - What's the leftover when you divide 13 by 3?
+
+- intent: calculate_mod_equality
+  examples: |
+    - Is 2 equal to 8 mod 3?
+    - Does 10 mod 4 equal 2?
+    - Is 7 the same as 19 mod 6?
+    - 3 equals 15 mod 4?
+    - Does 5 equal 21 mod 8?
+    - Check if 4 is equal to 28 mod 6
+
+- intent: calculate_mod_neg
+  examples: |
+    - What is -5 mod 3?
+     What is -5 mod 3?
+    - Find -12 mod 5
+    - Compute -20 mod 4
+    - What is 9 mod -3?
+    - What happens if I do 10 mod -2?
+    - Can I compute -8 mod -3?
+
+- intent: calculate_mod_story
+  examples: |
+    - If I have 17 candies and 4 friends, how many will be left?
+    - I want to divide 25 apples among 6 people, what's the leftover?
+    - What remains when I divide 20 cookies among 3 kids?
+    - If I share 13 balloons with 5 people, how many are left?
+    - I have 30 marbles and want to give them to 7 kids, what's the remainder?

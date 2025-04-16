@@ -1,0 +1,39 @@
+version: "3.1"
+
+stories:
+
+- story: Greeting
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: Goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Calculate basic mod
+  steps:
+  - intent: calculate_mod_base
+  - action: action_calc_mod
+
+- story: Calculate remainder mod
+  steps:
+  - intent: calculate_mod_remainder
+  - action: action_calc_mod
+
+- story: Check mod equality
+  steps:
+  - intent: calculate_mod_equality
+  - action: action_calc_mod
+
+- story: Mod with negative number
+  steps:
+  - intent: calculate_mod_neg
+  - action: action_calc_mod
+
+- story: Mod as a story
+  steps:
+  - intent: calculate_mod_story
+  - action: action_calc_mod
+  
